@@ -1,0 +1,6 @@
+@echo off
+echo Building transparent browser window...
+go mod tidy
+go build
+echo Running application...
+start transparentapp.exe 
