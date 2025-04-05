@@ -1,9 +1,6 @@
 package main
 
-import (
-	"github.com/zserge/lorca"
-	"time"
-)
+import "github.com/webview/webview"
 
 func main() {
 	w := webview.New(true)
