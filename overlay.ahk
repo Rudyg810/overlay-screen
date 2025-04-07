@@ -24,7 +24,8 @@ global opacity := 77
         x := 0
         y := screenHeight - windowHeight
 
-        WinActivate, %targetWindow%
+        WinActivate, %targetWindow% 
+        
         WinSet, AlwaysOnTop, On, %targetWindow%
         WinSet, Transparent, %opacity%, %targetWindow%
         WinShow, %targetWindow%
