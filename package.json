@@ -1,0 +1,37 @@
+{
+  "name": "overlay-app",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && electron .",
+    "electron-builder": "electron-builder"
+  },
+  "devDependencies": {
+    "electron-builder": "^26.0.12",
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "edge-js": "^23.1.5",
+    "glob": "^11.0.1",
+    "openai": "^4.93.0",
+    "rimraf": "^6.0.1",
+    "screenshot-desktop": "^1.15.1",
+    "tesseract.js": "^6.0.1"
+  },
+  "build": {
+    "appId": "com.example.electronapp",
+    "win": {
+      "target": "nsis"
+    },
+    "files": [
+      "dist/**/*",
+      "src/index.html",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "build"
+    }
+  }
+}

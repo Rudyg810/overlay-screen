@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        overflow: hidden;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+      }
+      #codeDisplay {
+        color: #f5f5f5; /* Off-white color */
+        text-align: left; /* Align text to the left */
+        white-space: pre-wrap; /* Preserve whitespace and wrap text */
+      }
+    </style>
+  </head>
+  <body>
+    <pre id="codeDisplay"></pre>
+    <script>
+      window.onload = () => {
+        const codeDisplay = document.getElementById('codeDisplay');
+        if (codeDisplay) {
+          codeDisplay.textContent = 'Your generated code here';
+        }
+      };
+    </script>
+  </body>
+</html>
+
